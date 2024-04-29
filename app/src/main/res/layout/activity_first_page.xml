@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFCDBE"
+    tools:context=".Activity.FirstPage">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/app_image" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/Login_With_Email"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginBottom="12dp"
+                    android:background="@drawable/btn"
+                    android:padding="5dp"
+                    android:textSize="20dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="SignUp With Email"
+                    android:textColor="@color/white" />
+
+
+                <LinearLayout
+                    android:id="@+id/singinlayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginTop="12dp"
+                    >
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#bd5500"
+
+                        android:textSize="20dp"
+                        android:textAlignment="center"
+                        android:layout_margin="12dp"
+                        android:padding="5dp"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="Already Have Account ?"
+                        />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/already_have_account"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:textAlignment="center"
+                        android:layout_margin="12dp"
+                        android:padding="5dp"
+                        android:textStyle="bold"
+                        android:text="SignIn"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textColor="@color/white"
+                        android:background="#bd5500"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
+
+
+
+
+
+
